@@ -18,6 +18,8 @@ export default {
         "期待与你相遇 ๑'ꀾ'๑",
       ],
       code: false,
+      disclaimer:
+        "博客部分图片收集于网络，仅供个人学习和欣赏使用。\n版权归原作者（含AI）所有。\n如侵犯了您的版权，请联系我删除并向您致歉。",
     };
   },
   mounted() {
@@ -52,7 +54,7 @@ export default {
         </p>
       </div>
       <transition name="fadeQr"
-        ><div id="qr" v-if="!code" @click="codeT">
+        ><div id="qr" v-show="!code" @click="codeT">
           点击此处联系我
         </div></transition
       >
@@ -61,9 +63,12 @@ export default {
           src="../assets/images/aboutMe-code.png"
           alt=""
           id="code"
-          v-if="code"
+          v-show="code"
           @click="codeT"
       /></transition>
+      <div id="footer" v-show="!code">
+        {{ disclaimer }}
+      </div>
     </div>
   </div>
 </template>
@@ -164,5 +169,15 @@ export default {
   opacity: 1;
   transform: none;
   transition: all 0.5s ease-in-out;
+}
+#footer {
+  width: 100%;
+  color: var(--color-lightgrey);
+  scale: 0.6;
+  text-align: center;
+  line-height: 1.3rem;
+  position: fixed;
+  bottom: 5px;
+  white-space: pre-wrap;
 }
 </style>

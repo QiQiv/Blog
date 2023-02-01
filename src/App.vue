@@ -6,7 +6,6 @@ import Calendar from "./components/Calendar.vue";
 import HighFive from "./components/HighFive.vue";
 import AboutMe from "./components/AboutMe.vue";
 import Gallery from "./components/Gallery.vue";
-import Footer from "./components/Footer.vue";
 
 export default {
   components: {
@@ -17,7 +16,6 @@ export default {
     HighFive,
     Gallery,
     AboutMe,
-    Footer,
   },
   data() {
     return {
@@ -36,7 +34,6 @@ export default {
   <div>
     <Header id="header" @setPage="setPage"></Header>
     <component :is="page" class="cpn"></component>
-    <Footer></Footer>
   </div>
 </template>
 
