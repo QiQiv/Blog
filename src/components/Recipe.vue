@@ -91,6 +91,7 @@ export default {
   height: 100vh;
   background: url("../assets/images/recipe-bg.jpg") no-repeat;
   background-size: cover;
+  font-size: 0.9rem;
 }
 #empty,
 #container {
@@ -117,8 +118,8 @@ export default {
   width: 24vw;
   min-width: 100px;
   max-width: 250px;
-  margin: 20px 10px;
-  padding: 20px;
+  margin: 2vh 2vw;
+  padding: 2.5vw;
   border: var(--color-lightgrey) 1px dotted;
   border-radius: calc(var(--btn-size) / 2);
   background-color: var(--color-lightgrey);
@@ -165,9 +166,9 @@ export default {
   box-shadow: var(--shadow-white);
 }
 .ings {
-  font-size: 0.9rem;
   color: var(--color-blue);
   text-shadow: var(--shadow-white);
   padding: 5px 0;
+  text-align: center;
 }
 </style>

@@ -3,7 +3,7 @@ export default {
   data() {
     return {
       disclaimer:
-        "本博客部分图片收集于网络，仅供个人学习和欣赏使用，版权归原作者（含AI）所有。\n如侵犯了您的版权，请联系我。我会删除它并致歉。",
+        "博客部分图片收集于网络，仅供个人学习和欣赏使用。\n版权归原作者（含AI）所有。\n如侵犯了您的版权，请联系我删除并向您致歉。",
     };
   },
 };
@@ -24,6 +24,5 @@ export default {
   position: fixed;
   bottom: 10px;
   white-space: pre-wrap;
-  z-index: 99;
 }
 </style>

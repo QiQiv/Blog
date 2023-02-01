@@ -11,7 +11,7 @@ export default {
         caugth: "game-caugth.mp3",
       },
       cover: {
-        title: "抓ฅ^ↀᴥↀ^ฅ",
+        title: "抓ฅ猫ฅ猫",
         dspt: ["点击猫爪消除", "抓住全部猫猫即可胜利", "准备好就开始吧 \u21E9"],
         startBtn: "\u25BA 开始冒险 \u25C4",
       },
