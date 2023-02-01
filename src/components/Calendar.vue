@@ -389,6 +389,7 @@ export default {
   box-shadow: var(--shadow-purple);
 }
 #calendar {
+  font-weight: bold;
   position: relative;
   height: max-content;
   width: max-content;
