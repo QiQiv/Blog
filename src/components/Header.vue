@@ -218,6 +218,7 @@ export default {
 .icon {
   font-size: calc(var(--btn-size) / 2.2);
   cursor: pointer;
+  text-shadow: var(--shadow-purple);
 }
 .menuText {
   min-width: var(--btn-size);
