@@ -418,7 +418,7 @@ export default {
   font-size: 0.8rem;
   margin-top: 20px;
   grid-template-columns: repeat(7, 1fr);
-
+  transition: all 0.5s ease-in-out;
   animation: flowdown 0.5s ease-in-out forwards;
   position: relative;
   opacity: 0;
@@ -456,6 +456,7 @@ export default {
   cursor: unset;
 }
 #reset {
+  color: rgba(103, 54, 148, 0.6);
   margin-top: 2vh;
   padding: 5px 20px;
   border-radius: 15px;

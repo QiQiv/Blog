@@ -131,6 +131,12 @@ export default {
   transition: all 0.3s ease-in-out;
   overflow: hidden;
 }
+#header.hide,
+#header.show,
+.menuText.show,
+.menuText.hide {
+  transition: all 0.3s ease-in-out;
+}
 #header.hide {
   animation: headerHide 0.3s linear forwards, flowHide 0.1s 0.5s linear forwards;
 }

@@ -208,7 +208,8 @@ export default {
   left: 50%;
   z-index: 0;
   background-clip: padding-box;
-  animation: around 24s linear infinite;
+  transition: all 1s ease-in-out;
+  animation: around 20s linear infinite;
 }
 @keyframes around {
   0% {

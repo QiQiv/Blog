@@ -48,11 +48,13 @@ export default {
     },
     init() {
       const menu = document.querySelectorAll(".menu");
-      menu.forEach((item, index) => {
-        setTimeout(() => {
-          item.classList.add("show");
-        }, index * 45 + 50);
-      });
+      setTimeout(() => {
+        menu.forEach((item, index) => {
+          setTimeout(() => {
+            item.classList.add("show");
+          }, index * 100);
+        });
+      }, 500);
     },
   },
   setup() {
@@ -119,7 +121,7 @@ export default {
   min-width: 100px;
   max-width: 250px;
   margin: 2vh 2vw;
-  padding: 2.5vw;
+  padding: 2vw;
   border: var(--color-lightgrey) 1px dotted;
   border-radius: calc(var(--btn-size) / 2);
   background-color: var(--color-lightgrey);
@@ -127,6 +129,7 @@ export default {
   opacity: 0;
 }
 .menu.show {
+  transition: all 0.6s ease-in-out;
   animation: menuShow 0.6s linear forwards;
 }
 @keyframes menuShow {

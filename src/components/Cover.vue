@@ -30,12 +30,14 @@ export default {
             e.classList.add("show");
           }, i * 450);
         });
+      }, 1000);
+      setTimeout(() => {
+        for (let i = 1; i <= letter.length; i++) {
+          setTimeout(() => {
+            typer.innerText = letter.substring(0, i);
+          }, i * 150);
+        }
       }, 500);
-      for (let i = 1; i <= letter.length; i++) {
-        setTimeout(() => {
-          typer.innerText = letter.substring(0, i);
-        }, i * 150);
-      }
     },
   },
 };

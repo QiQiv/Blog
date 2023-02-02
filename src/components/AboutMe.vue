@@ -106,6 +106,7 @@ export default {
   border-radius: 50%;
   border: #fff 8px dotted;
   background-clip: padding-box;
+  transition: all 1s ease-in-out;
   animation: around 10s linear infinite;
 }
 @keyframes around {
@@ -126,6 +127,7 @@ export default {
   box-shadow: var(--shadow-white);
   position: relative;
   opacity: 0;
+  transition: all 1s ease-in-out;
   animation: down 0.5s linear forwards;
 }
 #intr p {
@@ -151,6 +153,7 @@ export default {
 }
 #qr.show {
   opacity: 0;
+  transition: all 1s ease-in-out;
   animation: down 0.5s 0.2s ease-in-out forwards;
 }
 #code {

@@ -133,7 +133,7 @@ export default {
 }
 .filter {
   filter: saturate(120%) contrast(80%) blur(1px);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 </style>
 <style>
